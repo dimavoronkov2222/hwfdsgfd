@@ -24,7 +24,6 @@ public class Main {
         }
     }
     static class CurrencyConverter {
-
         private static final double USD_TO_EUR = 0.92;
         private static final double USD_TO_GBP = 0.75;
         private static final double USD_TO_JPY = 135.25;
@@ -39,6 +38,7 @@ public class Main {
         }
     }
     static class StringUtils {
+
         public boolean isPalindrome(String str) {
             String reversed = new StringBuilder(str).reverse().toString();
             return str.equals(reversed);
