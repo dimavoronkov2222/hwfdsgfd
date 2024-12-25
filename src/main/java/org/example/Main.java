@@ -38,7 +38,6 @@ public class Main {
         }
     }
     static class StringUtils {
-
         public boolean isPalindrome(String str) {
             String reversed = new StringBuilder(str).reverse().toString();
             return str.equals(reversed);
@@ -46,7 +45,7 @@ public class Main {
         public int countVowels(String str) {
             int count = 0;
             for (char c : str.toCharArray()) {
-                if ("AEIOUaeiou".indexOf(c) != -1) {
+                if (Character.isLetter(c) && "AEIOUaeiou".indexOf(c) != -1) {
                     count++;
                 }
             }
